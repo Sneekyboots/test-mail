@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EmailActivity">
+
+    <EditText
+        android:id="@+id/recipientEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Recipient Email" />
+
+    <EditText
+        android:id="@+id/subjectEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Subject" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:minLines="4" />
+
+    <Button
+        android:id="@+id/sendEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Send" />
+
+    <!-- New button to navigate to ReceiveEmailActivity -->
+    <Button
+        android:id="@+id/viewReceivedEmailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="View Received Emails" />
+</LinearLayout>
